@@ -35,11 +35,11 @@ int main(int argc, char** argv)
     end_time = high_resolution_clock::now();
     MyTimeOutput("WTHE处理时间: ", start_time, end_time);
 
-    start_time = high_resolution_clock::now();
-    cv::Mat GCEHistMod_dst;
-    GCEHistMod(src, GCEHistMod_dst);
-    end_time = high_resolution_clock::now();
-    MyTimeOutput("GCEHistMod处理时间: ", start_time, end_time);
+    // start_time = high_resolution_clock::now();
+    // cv::Mat GCEHistMod_dst;
+    // GCEHistMod(src, GCEHistMod_dst);
+    // end_time = high_resolution_clock::now();
+    // MyTimeOutput("GCEHistMod处理时间: ", start_time, end_time);
 
     start_time = high_resolution_clock::now();
     cv::Mat LDR_dst;
@@ -65,49 +65,49 @@ int main(int argc, char** argv)
     end_time = high_resolution_clock::now();
     MyTimeOutput("IAGCWD处理时间: ", start_time, end_time);
 
-    start_time = high_resolution_clock::now();
-    cv::Mat Ying_dst;
-    Ying_2017_CAIP(src, Ying_dst);
-    end_time = high_resolution_clock::now();
-    MyTimeOutput("Ying处理时间: ", start_time, end_time);
+    // start_time = high_resolution_clock::now();
+    // cv::Mat Ying_dst;
+    // Ying_2017_CAIP(src, Ying_dst);
+    // end_time = high_resolution_clock::now();
+    // MyTimeOutput("Ying处理时间: ", start_time, end_time);
 
-    start_time = high_resolution_clock::now();
-    cv::Mat CEusingLuminanceAdaptation_dst;
-    CEusingLuminanceAdaptation(src, CEusingLuminanceAdaptation_dst);
-    end_time = high_resolution_clock::now();
-    MyTimeOutput("CEusingLuminanceAdaptation处理时间: ", start_time, end_time);
+    // start_time = high_resolution_clock::now();
+    // cv::Mat CEusingLuminanceAdaptation_dst;
+    // CEusingLuminanceAdaptation(src, CEusingLuminanceAdaptation_dst);
+    // end_time = high_resolution_clock::now();
+    // MyTimeOutput("CEusingLuminanceAdaptation处理时间: ", start_time, end_time);
 
-    start_time = high_resolution_clock::now();
-    cv::Mat adaptiveImageEnhancement_dst;
-    adaptiveImageEnhancement(src, adaptiveImageEnhancement_dst);
-    end_time = high_resolution_clock::now();
-    MyTimeOutput("adaptiveImageEnhancement处理时间: ", start_time, end_time);
+    // start_time = high_resolution_clock::now();
+    // cv::Mat adaptiveImageEnhancement_dst;
+    // adaptiveImageEnhancement(src, adaptiveImageEnhancement_dst);
+    // end_time = high_resolution_clock::now();
+    // MyTimeOutput("adaptiveImageEnhancement处理时间: ", start_time, end_time);
     
-    start_time = high_resolution_clock::now();
-    cv::Mat JHE_dst;
-    JHE(src, JHE_dst);
-    end_time = high_resolution_clock::now();
-    MyTimeOutput("JHE处理时间: ", start_time, end_time);
+    // start_time = high_resolution_clock::now();
+    // cv::Mat JHE_dst;
+    // JHE(src, JHE_dst);
+    // end_time = high_resolution_clock::now();
+    // MyTimeOutput("JHE处理时间: ", start_time, end_time);
 
-    start_time = high_resolution_clock::now();
-    cv::Mat SEF_dst;
-    SEF(src, SEF_dst);
-    end_time = high_resolution_clock::now();
-    MyTimeOutput("SEF处理时间: ", start_time, end_time);
+    // start_time = high_resolution_clock::now();
+    // cv::Mat SEF_dst;
+    // SEF(src, SEF_dst);
+    // end_time = high_resolution_clock::now();
+    // MyTimeOutput("SEF处理时间: ", start_time, end_time);
 
     cv::imshow("src", src);
     cv::imshow("AINDANE_dst", AINDANE_dst);
     cv::imshow("WTHE_dst", WTHE_dst);
-    cv::imshow("GCEHistMod_dst", GCEHistMod_dst);
+    // cv::imshow("GCEHistMod_dst", GCEHistMod_dst);
     cv::imshow("LDR_dst", LDR_dst);
     cv::imshow("AGCWD_dst", AGCWD_dst);
     cv::imshow("AGCIE_dst", AGCIE_dst);
     cv::imshow("IAGCWD_dst", IAGCWD_dst);
-    cv::imshow("Ying_dst", Ying_dst);
-    cv::imshow("CEusingLuminanceAdaptation_dst", CEusingLuminanceAdaptation_dst);
-    cv::imshow("adaptiveImageEnhancement_dst", adaptiveImageEnhancement_dst);
-    cv::imshow("JHE_dst", JHE_dst);
-    cv::imshow("SEF_dst", SEF_dst);
+    // cv::imshow("Ying_dst", Ying_dst);
+    // cv::imshow("CEusingLuminanceAdaptation_dst", CEusingLuminanceAdaptation_dst);
+    // cv::imshow("adaptiveImageEnhancement_dst", adaptiveImageEnhancement_dst);
+    // cv::imshow("JHE_dst", JHE_dst);
+    // cv::imshow("SEF_dst", SEF_dst);
 	
     cv::waitKey();
     return 0;
